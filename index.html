@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanden Intercool - Giải pháp tủ mát chuẩn Nhật Bản. Lạnh sâu, bền bỉ, tiết kiệm điện 35%, bảo hành chính hãng tận nơi.">
+    <title>Sanden Intercool - Giải Pháp Tủ Mát Chuẩn Nhật</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-sanden">Sanden</span><span class="logo-intercool">Intercool</span>
+            </a>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#pain-points" class="nav__link">Vấn Đề</a></li>
+                <li><a href="#features" class="nav__link">Công Nghệ</a></li>
+                <li><a href="#comparison" class="nav__link">So Sánh</a></li>
+                <li><a href="#testimonials" class="nav__link">Đánh Giá</a></li>
+            </ul>
+            <a href="#contact" class="nav__cta">Nhận Báo Giá</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container hero__grid">
+            <div class="hero__content">
+                <p class="hero__badge">🇯🇵 Thương hiệu Nhật Bản — Đối tác của Coca-Cola, Pepsi, 7-Eleven</p>
+                <h1 class="hero__title">
+                    Sanden Intercool –<br>
+                    <span class="hero__title-accent">Giải Pháp Tủ Mát</span><br>
+                    Chuẩn Nhật
+                </h1>
+                <p class="hero__desc">
+                    Đập tan nỗi lo hỏng hàng, tốn điện và bảo hành chậm trễ. Lựa chọn số 1 của các tập đoàn đồ uống hàng đầu thế giới.
+                </p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary">Nhận Báo Giá Ngay</a>
+                    <a href="#features" class="btn btn--ghost">Tìm Hiểu Thêm →</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-count="24">0</span>
+                        <span class="hero__stat-label">Quốc gia tin dùng</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-count="15">0</span>
+                        <span class="hero__stat-label">Năm tuổi thọ trung bình</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-count="35">0</span>
+                        <span class="hero__stat-label">% Tiết kiệm điện năng</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__image-glow"></div>
+                <img src="hero-cooler.png" alt="Tủ mát Sanden Intercool" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAIN POINTS ===== -->
+    <section class="pain-points" id="pain-points">
+        <div class="container">
+            <p class="section__label">Nỗi Đau Thường Gặp</p>
+            <h2 class="section__title">Kinh Doanh Đồ Uống,<br>Bạn Có Đang Gặp Phải?</h2>
+            <div class="pain-points__grid">
+                <div class="pain-card">
+                    <div class="pain-card__icon pain-card__icon--red">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6l3 3"/><circle cx="12" cy="14" r="8"/><path d="M12 10v4l2 2"/></svg>
+                    </div>
+                    <h3 class="pain-card__title">Tủ Không Đủ Lạnh</h3>
+                    <p class="pain-card__desc">Nhiệt độ không ổn định khiến thực phẩm, nước uống biến chất, gây tổn thất doanh thu nghiêm trọng.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-card__icon pain-card__icon--orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3 class="pain-card__title">Hóa Đơn Điện Cao</h3>
+                    <p class="pain-card__desc">Máy nén cũ kỹ ngốn điện năng lớn, "ăn mòn" lợi nhuận mỗi tháng của bạn.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-card__icon pain-card__icon--red">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3 class="pain-card__title">Tủ Hỏng Liên Miên</h3>
+                    <p class="pain-card__desc">Lỗi gas, lỗi block khiến việc kinh doanh gián đoạn. Chi phí sửa chữa quá đắt đỏ.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-card__icon pain-card__icon--orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9.5 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="pain-card__title">Bảo Hành Chậm Trễ</h3>
+                    <p class="pain-card__desc">Gọi thợ mãi không tới, chính sách bảo hành mập mờ, đại lý đùn đẩy trách nhiệm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VALUE PROPOSITION ===== -->
+    <section class="value-prop" id="value-prop">
+        <div class="container value-prop__grid">
+            <div class="value-prop__image">
+                <img src="copper-evaporator.png" alt="Dàn lạnh đồng nguyên chất Sanden" loading="lazy">
+            </div>
+            <div class="value-prop__content">
+                <p class="section__label">Giải Pháp Từ Sanden</p>
+                <h2 class="section__title section__title--left">Chất Lượng Nhật Bản<br>Nâng Tầm Kinh Doanh</h2>
+                <div class="value-prop__items">
+                    <div class="value-item">
+                        <div class="value-item__icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 14.5V12m0-4h.01"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="value-item__title">Làm Lạnh Cực Nhanh</h3>
+                            <p class="value-item__desc">Hệ thống quạt đảo nhiệt thông minh, lạnh sâu tới 0°C chỉ trong thời gian ngắn. Dàn lạnh ống đồng nguyên chất 100%.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-item__icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="value-item__title">Tiết Kiệm Điện Đến 35%</h3>
+                            <p class="value-item__desc">Công nghệ Inverter Nhật Bản kết hợp kính Low-E phản xạ nhiệt, giảm thất thoát hơi lạnh tối đa.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-item__icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="value-item__title">Độ Bền Vượt Trội 15 Năm</h3>
+                            <p class="value-item__desc">Máy nén cao cấp và dàn lạnh đồng nguyên chất, chống ăn mòn hiệu quả. Tiêu chuẩn kiểm định quốc tế.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TECH FEATURES ===== -->
+    <section class="tech-features" id="features">
+        <div class="container">
+            <p class="section__label">Công Nghệ Cốt Lõi</p>
+            <h2 class="section__title">Chi Tiết Nhỏ Tạo Nên<br>Chất Lượng Lớn</h2>
+            <div class="tech-features__grid">
+                <div class="tech-card">
+                    <div class="tech-card__image">
+                        <img src="inverter-compressor.png" alt="Máy nén Inverter" loading="lazy">
+                    </div>
+                    <h3 class="tech-card__title">Máy Nén Inverter</h3>
+                    <p class="tech-card__desc">Tự điều chỉnh công suất theo tải. Vận hành êm ái, tiết kiệm 25-35% điện năng so với dòng thường.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-card__image">
+                        <div class="tech-card__icon-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 9h20M2 15h20"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="tech-card__title">Kính Hút Chân Không</h3>
+                    <p class="tech-card__desc">2 lớp kính cường lực hút chân không ở giữa giúp cách nhiệt tuyệt đối, không đọng sương.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-card__image">
+                        <div class="tech-card__icon-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="tech-card__title">Gas R600a Thế Hệ Mới</h3>
+                    <p class="tech-card__desc">Hiệu suất lạnh cao, tiết kiệm điện năng và cực kỳ thân thiện với môi trường.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CLIENT LOGOS ===== -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <p class="section__label">Khách Hàng Toàn Cầu</p>
+            <h2 class="section__title">Sự Lựa Chọn Của<br>Những Thương Hiệu Hàng Đầu</h2>
+            <div class="clients__logos">
+                <div class="client-logo">Coca-Cola</div>
+                <div class="client-logo">Pepsi</div>
+                <div class="client-logo">Heineken</div>
+                <div class="client-logo">7-Eleven</div>
+                <div class="client-logo">FamilyMart</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMPARISON TABLE ===== -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <p class="section__label">So Sánh Thực Tế</p>
+            <h2 class="section__title">So Sánh Sự Khác Biệt</h2>
+            <div class="comparison__table-wrapper">
+                <table class="comparison__table">
+                    <thead>
+                        <tr>
+                            <th>Tiêu chí</th>
+                            <th>Tủ mát thông thường</th>
+                            <th class="comparison__highlight">Sanden Intercool</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Điện năng tiêu thụ</td>
+                            <td>~350 kWh/tháng</td>
+                            <td class="comparison__highlight"><strong>~230 kWh/tháng</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Tốc độ làm lạnh</td>
+                            <td>Chậm, không đều</td>
+                            <td class="comparison__highlight"><strong>Lạnh nhanh, đều 100%</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Độ ồn vận hành</td>
+                            <td>≥ 50 dB (ồn)</td>
+                            <td class="comparison__highlight"><strong>≤ 38 dB (êm ái)</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Tuổi thọ trung bình</td>
+                            <td>3 – 5 năm</td>
+                            <td class="comparison__highlight"><strong>10 – 15 năm</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Dàn lạnh</td>
+                            <td>Nhôm (dễ oxy hóa)</td>
+                            <td class="comparison__highlight"><strong>Đồng nguyên chất 100%</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Bảo hành</td>
+                            <td>Qua đại lý trung gian</td>
+                            <td class="comparison__highlight"><strong>Chính hãng tận nơi</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Chi phí điện/năm*</td>
+                            <td>~12.600.000đ</td>
+                            <td class="comparison__highlight"><strong>~8.280.000đ <span class="comparison__save">Tiết kiệm 4.3 triệu</span></strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="comparison__note">* Ước tính với giá điện bậc thang ~3.000đ/kWh, tủ 400L hoạt động 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <p class="section__label">Khách Hàng Nói Gì?</p>
+            <h2 class="section__title">Khách Hàng Tin Dùng<br>Sanden Tại Việt Nam</h2>
+            <div class="testimonials__grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Từ khi đổi sang dùng tủ Sanden, tiền điện quán tôi giảm hẳn 1 triệu/tháng. Máy chạy cực kỳ êm ru, khách hàng lúc nào cũng có nước lạnh uống ngay. Rất hài lòng!"</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">LA</div>
+                        <div>
+                            <p class="testimonial-card__name">Chị Lan Anh</p>
+                            <p class="testimonial-card__role">Chủ chuỗi Café Sạch, Hà Nội</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Lần trước tủ cũ bị hỏng làm hỏng hết cả lô hàng sữa chua, xót tiền lắm. May đổi sang Sanden, nhiệt độ luôn chuẩn xác, bảo hành lại cực nhanh."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">MT</div>
+                        <div>
+                            <p class="testimonial-card__name">Anh Minh Tuấn</p>
+                            <p class="testimonial-card__role">Chủ cửa hàng tiện lợi MiniMart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA / CONTACT FORM ===== -->
+    <section class="cta-section" id="contact">
+        <div class="container cta-section__grid">
+            <div class="cta-section__content">
+                <h2 class="cta-section__title">Ưu Đãi Đặc Biệt<br>Tháng Này!</h2>
+                <p class="cta-section__desc">Đăng ký nhận báo giá ngay để nhận ưu đãi hấp dẫn:</p>
+                <ul class="cta-section__benefits">
+                    <li>✓ Voucher giảm giá <strong>1.000.000đ</strong></li>
+                    <li>✓ Gói bảo trì miễn phí <strong>1 năm đầu tiên</strong></li>
+                    <li>✓ Giao hàng & lắp đặt <strong>miễn phí toàn quốc</strong></li>
+                </ul>
+            </div>
+            <div class="cta-section__form-wrapper">
+                <form class="contact-form" id="contact-form"
+                      action="https://docs.google.com/forms/d/e/1FAIpQLSfgjRmr8dNxZTVfovwMt2Ze_WMhIS9vK7xD9Yp1ebPAXaXpnA/formResponse"
+                      method="POST">
+                    <h3 class="contact-form__title">Nhận Tư Vấn Miễn Phí</h3>
+                    <div class="form-group">
+                        <input type="text" name="entry.545321213" id="form-name" placeholder="Họ và tên *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="entry.370848660" id="form-phone" placeholder="Số điện thoại *" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="entry.353309686" id="form-need">
+                            <option value="">Nhu cầu sử dụng</option>
+                            <option value="Nhà hàng / Quán ăn">Nhà hàng / Quán ăn</option>
+                            <option value="Siêu thị mini">Siêu thị mini</option>
+                            <option value="Cửa hàng tạp hóa">Cửa hàng tạp hóa</option>
+                            <option value="Cửa hàng tiện lợi">Cửa hàng tiện lợi</option>
+                            <option value="Quán café">Quán café</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Nhận Báo Giá & Ưu Đãi →</button>
+                    <p class="contact-form__privacy">Thông tin của bạn được bảo mật tuyệt đối</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a href="#" class="nav__logo">
+                    <span class="logo-sanden">Sanden</span><span class="logo-intercool">Intercool</span>
+                </a>
+                <p class="footer__tagline">Premium Refrigeration Engineering.<br>Japanese technology for global excellence.</p>
+            </div>
+            <div class="footer__links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#pain-points">Vấn Đề</a></li>
+                    <li><a href="#features">Công Nghệ</a></li>
+                    <li><a href="#comparison">So Sánh</a></li>
+                    <li><a href="#testimonials">Đánh Giá</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h4>Liên Hệ</h4>
+                <ul>
+                    <li>📞 +84-028-62-766-012</li>
+                    <li>📧 acctmgr_siv@sandenintercool.com</li>
+                    <li>📍 288/1, Tổ 3, P. Thới An, Q.12, TP.HCM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>© 2026 Sanden Intercool Vietnam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
