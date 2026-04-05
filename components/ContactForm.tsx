@@ -95,7 +95,10 @@ export default function ContactForm() {
               </form>
              )}
             
-            {/* Hidden Iframe for silent submission */}
+            {/* Hidden Iframe for silent submission. 
+                Note: This will trigger a CSP "frame-ancestors 'none'" error in the console. 
+                This is expected behavior and does NOT prevent the data from being submitted to Google.
+            */}
             <iframe 
               name="hidden_iframe" 
               id="hidden_iframe" 

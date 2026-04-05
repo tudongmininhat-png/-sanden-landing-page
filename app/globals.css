@@ -50,7 +50,7 @@ html {
 }
 
 body {
-  font-family: inherit;
+  font-family: var(--font-pjs), sans-serif;
   background: var(--surface);
   color: var(--on-surface);
   line-height: 1.6;
