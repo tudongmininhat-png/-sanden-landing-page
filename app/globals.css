@@ -64,6 +64,14 @@ a {
   transition: var(--transition-smooth);
 }
 
+/* Global Nav Link Active Styles */
+.nav__link.nav__link--active {
+  color: var(--primary) !important;
+}
+.nav__link.nav__link--active::after {
+  width: 100% !important;
+}
+
 ul {
   list-style: none;
 }

@@ -6,12 +6,33 @@ import Link from 'next/link';
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      
+      const sections = ['pain-points', 'features', 'comparison', 'testimonials', 'contact'];
+      let currentSection = '';
+      const middleY = window.innerHeight / 2;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // If the section crosses the middle of the screen
+          if (rect.top <= middleY + 100 && rect.bottom >= middleY - 100) {
+            currentSection = section;
+          }
+        }
+      }
+      
+      setActiveSection(currentSection);
     };
+
     window.addEventListener('scroll', handleScroll);
+    setTimeout(handleScroll, 100);
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -37,10 +58,10 @@ export default function Header() {
           <span className="logo-intercool">Intercool</span>
         </Link>
         <ul className="nav__menu hide-on-mobile">
-          <li><Link href="#pain-points" className="nav__link">Vấn Đề</Link></li>
-          <li><Link href="#features" className="nav__link">Công Nghệ</Link></li>
-          <li><Link href="#comparison" className="nav__link">So Sánh</Link></li>
-          <li><Link href="#testimonials" className="nav__link">Đánh Giá</Link></li>
+          <li><Link href="#pain-points" className={`nav__link ${activeSection === 'pain-points' ? 'nav__link--active' : ''}`}>Vấn Đề</Link></li>
+          <li><Link href="#features" className={`nav__link ${activeSection === 'features' ? 'nav__link--active' : ''}`}>Công Nghệ</Link></li>
+          <li><Link href="#comparison" className={`nav__link ${activeSection === 'comparison' ? 'nav__link--active' : ''}`}>So Sánh</Link></li>
+          <li><Link href="#testimonials" className={`nav__link ${activeSection === 'testimonials' ? 'nav__link--active' : ''}`}>Đánh Giá</Link></li>
         </ul>
         <div className="nav__actions hide-on-mobile">
           <Link href="#contact" className="nav__cta">
@@ -58,10 +79,10 @@ export default function Header() {
         {/* Mobile Menu Overlay */}
         <div className={`mobile-menu ${isMenuOpen ? 'mobile-menu--active' : ''}`}>
           <ul className="mobile-menu__links">
-            <li><Link href="#pain-points" onClick={closeMenu}>Vấn Đề</Link></li>
-            <li><Link href="#features" onClick={closeMenu}>Công Nghệ</Link></li>
-            <li><Link href="#comparison" onClick={closeMenu}>So Sánh</Link></li>
-            <li><Link href="#testimonials" onClick={closeMenu}>Đánh Giá</Link></li>
+            <li><Link href="#pain-points" className={activeSection === 'pain-points' ? 'mobile-link--active' : ''} onClick={closeMenu}>Vấn Đề</Link></li>
+            <li><Link href="#features" className={activeSection === 'features' ? 'mobile-link--active' : ''} onClick={closeMenu}>Công Nghệ</Link></li>
+            <li><Link href="#comparison" className={activeSection === 'comparison' ? 'mobile-link--active' : ''} onClick={closeMenu}>So Sánh</Link></li>
+            <li><Link href="#testimonials" className={activeSection === 'testimonials' ? 'mobile-link--active' : ''} onClick={closeMenu}>Đánh Giá</Link></li>
             <li>
               <Link href="#contact" className="nav__cta" onClick={closeMenu}>
                 Báo giá 2026
@@ -137,7 +158,7 @@ export default function Header() {
           padding: 0.5rem 0;
         }
 
-        .nav__link:hover {
+        .nav__link:hover, .nav__link--active {
           color: var(--primary);
         }
 
@@ -152,7 +173,7 @@ export default function Header() {
           transition: width 0.4s var(--transition-bounce);
         }
 
-        .nav__link:hover::after {
+        .nav__link:hover::after, .nav__link--active::after {
           width: 100%;
         }
 
@@ -244,6 +265,10 @@ export default function Header() {
           text-transform: uppercase;
           letter-spacing: 0.1em;
           color: var(--on-surface);
+        }
+        
+        .mobile-menu__links li a.mobile-link--active {
+          color: var(--primary);
         }
 
         @media (max-width: 1024px) {
