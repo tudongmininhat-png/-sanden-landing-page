@@ -89,7 +89,27 @@ export default function ContactForm() {
                     <option value="Quán cafe">Quán cafe</option>
                   </select>
                 </div>
-                
+
+                <div className="form-group">
+                  <select name="entry.1691275557" id="form-product">
+                    <option value="">Loại tủ mát anh/chị quan tâm nhất?</option>
+                    <option value="Tủ mát 1 cánh kính">Tủ mát 1 cánh kính</option>
+                    <option value="Tủ mát 2 cánh kính">Tủ mát 2 cánh kính</option>
+                    <option value="Tủ mát 3 cánh kính">Tủ mát 3 cánh kính</option>
+                    <option value="Tủ mát inox">Tủ mát inox</option>
+                  </select>
+                </div>
+
+                <div className="form-group">
+                  <select name="entry.1654654640" id="form-problem">
+                    <option value="">Vấn đề anh/chị đang gặp phải là?</option>
+                    <option value="Tốn điện năng">Tốn điện năng</option>
+                    <option value="Cửa bị chảy nước">Cửa bị chảy nước</option>
+                    <option value="Tủ quá nóng khi hoạt động">Tủ quá nóng khi hoạt động</option>
+                    <option value="Lạnh yếu">Lạnh yếu</option>
+                    <option value="Khác">Mục khác...</option>
+                  </select>
+                </div>   
                 <button type="submit" className="btn btn--primary btn--full">Gửi và Nhận Ưu Đãi Ngay</button>
                 <p className="contact-form__privacy">Chúng tôi cam kết bảo mật 100% dữ liệu của đối tác.</p>
               </form>
