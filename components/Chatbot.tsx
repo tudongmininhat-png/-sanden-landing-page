@@ -4,10 +4,18 @@ import { useState, useEffect, useRef, KeyboardEvent } from 'react';
 
 const FAQS = [
   {
+    q: "Giá tủ mát Sanden bao nhiêu?",
+    keywords: ["giá", "bao nhiêu", "tiền", "bao nhiêu tiền", "giá cả", "phí", "mắc", "rẻ", "tầm giá"],
+    a: "Dạ bên em có nhiều dòng giá khác nhau anh ơi. Em gửi bảng tham khảo nhanh nhé:\n\n• Tủ mát 1 cánh: 10,3 – 12,3 triệu\n• Tủ mát 1 cánh Inverter: 15,3 – 26 triệu\n• Tủ mát 2-3 cánh: 27,6 – 51,2 triệu\n• Tủ đông đứng: 16,3 – 44 triệu\n• Tủ đông nằm: 6,2 – 28,4 triệu\n• Tủ rượu: 7,3 – 31,2 triệu\n• Tủ bánh: 11,3 – 42,3 triệu\n\n(Giá bán lẻ đề xuất, đã VAT 8% – 04/2026)\n\nAnh cần dòng nào để em gửi báo giá chi tiết và ưu đãi tốt nhất cho mình ạ?",
+    showCta: true
+  },
+  {
     q: "Tủ này sản xuất ở đâu em?",
     keywords: ["sản xuất", "xuất xứ", "đâu", "nhật", "thái", "nguồn gốc", "xuất"],
     a: "Dạ, Sanden Intercool là thương hiệu số 1 của Nhật Bản. Tủ bên em được nhập khẩu nguyên chiếc từ nhà máy Sanden tại Thái Lan nên độ bền và tiêu chuẩn kỹ thuật anh yên tâm hoàn toàn ạ."
   },
+
+
   {
     q: "Tủ chạy có tốn điện không?",
     keywords: ["điện", "tốn", "tiết kiệm", "hóa đơn", "kwh", "inverter", "biến tần"],
@@ -52,18 +60,30 @@ const FAQS = [
     q: "Linh kiện hư có dễ thay không?",
     keywords: ["linh kiện", "phụ tùng", "thay", "sửa chữa", "thợ", "kỹ thuật"],
     a: "Dạ Sanden có kho linh kiện chính hãng tại Việt Nam rất đầy đủ. Việc bảo trì hay thay thế cực kỳ đơn giản, anh không phải lo tìm đồ không có đâu ạ."
+  },
+  {
+    q: "Sản phẩm nào phù hợp với tôi?",
+    keywords: ["phù hợp", "dùng loại nào", "mua loại nào", "tư vấn", "chọn", "loại nào tốt", "gợi ý", "dòng nào"],
+    a: "Dạ để em tư vấn đúng dòng cho mình thì anh/chị cho em hỏi thêm xíu nhé:\n\n1. Mình kinh doanh gì? (cafe, tạp hóa, nhà hàng, kinh doanh kem...)\n2. Không gian để tủ rộng cỡ nào?\n3. Cần bảo quản gì? (nước uống, đông lạnh, rượu, bánh...)\n\nAnh trả lời giúp em mấy ý trên, em sẽ gợi ý đúng model và báo giá cụ thể cho mình trong ngày ạ!",
+    showCta: true
+  },
+  {
+    q: "Dạ để tôi nghĩ thêm",
+    keywords: ["nghĩ thêm", "dể tính", "chua biet", "chưa biết", "hẹn sau", "tính sau", "dể hỏi thêm", "nghĩ lại", "thôi hẹn", "thôi để"],
+    a: "Dạ không sao ạ, mua tủ cũng là đầu tư lớn nên anh cân nhắc kỹ là đúng rồi ạ.\n\nĐể em không làm phiền anh, anh để lại số điện thoại/zalo bên dưới nhé. Khi nào anh cần hoặc muốn hỏi thêm, em nhắn ngay — không cần gọi mà vẫn được hỗ trợ đầy đủ ạ.",
+    showCta: true
   }
 ];
 
 const DEFAULT_FALLBACK = "Dạ câu này em chưa có thông tin chính xác để trả lời ngay ạ. Anh/chị để lại thông tin bên dưới, bên em sẽ liên hệ hỗ trợ trực tiếp cho mình nhanh nhất nhé!";
 
-function matchKeyword(input: string): string | null {
+function matchKeyword(input: string): { a: string; showCta: boolean } | null {
   const normalized = input.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   for (const faq of FAQS) {
     for (const kw of faq.keywords) {
       const kwNorm = kw.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       if (normalized.includes(kwNorm)) {
-        return faq.a;
+        return { a: faq.a, showCta: faq.showCta === true };
       }
     }
   }
@@ -116,7 +136,7 @@ export default function Chatbot() {
     setTimeout(() => {
       const matched = matchKeyword(trimmed);
       if (matched) {
-        setHistory(prev => [...prev, { type: 'bot', text: matched }]);
+        setHistory(prev => [...prev, { type: 'bot', text: matched.a, showCta: matched.showCta }]);
       } else {
         setHistory(prev => [...prev, { type: 'bot', text: DEFAULT_FALLBACK, showCta: true }]);
       }

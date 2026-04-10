@@ -32,8 +32,21 @@
 ### Câu 7: Bên em có giao hàng miễn phí không?
 "Dạ, bên em hỗ trợ giao hàng và lắp đặt tận nơi cho mình. Tùy khu vực mà bên em sẽ có chính sách miễn phí hoặc hỗ trợ phí vận chuyển tốt nhất cho anh ạ. Anh cho em xin địa chỉ nhé?"
 
-### Câu 8: Tủ này dùng bao lâu thì cần nạp gas?
-"Dạ với dàn lạnh đồng 100% của Sanden thì hệ thống rất kín và bền, mình dùng vài năm cũng không phải lo nạp gas đâu ạ. Chỉ cần định kỳ vệ sinh bụi bẩn ở dàn nóng là tủ chạy bền bỉ suốt đời luôn."
+### Câu 8: Tủ này giá bao nhiêu?
+"Dạ bên em có nhiều dòng giá khác nhau anh ơi. Em gửi bảng tham khảo nhanh nhé:
+
+- Tủ mát 1 cánh (194-266L): từ **10,3 – 12,3 triệu**
+- Tủ mát 1 cánh Inverter (278-638L): từ **15,3 – 26 triệu**
+- Tủ mát 2 cánh (765-1100L): từ **27,6 – 38,6 triệu**
+- Tủ mát 3 cánh (1160-1650L): từ **38,6 – 51,2 triệu**
+- Tủ đông đứng cửa kính: từ **16,3 – 44 triệu**
+- Tủ đông nằm: từ **6,2 – 28,4 triệu**
+- Tủ rượu: từ **7,3 – 31,2 triệu**
+- Tủ bánh: từ **11,3 – 42,3 triệu**
+
+*(Giá bán lẻ đề xuất, đã VAT 8% – cập nhật 08/2026)*
+
+Anh cần dòng nào để em gửi báo giá chi tiết và ưu đãi tốt nhất cho mình ạ?"
 
 ### Câu 9: Anh bán cafe thì dùng loại nào vừa xinh?
 "Dạ nếu quán cafe thì dòng 1 cánh 400 lít (như mã SPM-0400) là cực kỳ vừa vặn ạ. Tủ sấy kính đẹp, đèn LED sáng, trưng bày nước hay nguyên liệu pha chế nhìn rất chuyên nghiệp anh ạ."
@@ -50,3 +63,51 @@
 
 ## 4. Câu Hướng Khách Điền Form (Khi khách chưa mua ngay)
 "Dạ không sao ạ, anh cứ cân nhắc thêm cho kỹ. Hay để em gửi thêm bảng thông số chi tiết và các chương trình khuyến mãi tháng này vào mail hoặc zalo cho anh nhé? Anh để lại thông tin ở đây (link form) để em theo sát hỗ trợ anh tốt nhất khi mình cần ạ."
+
+---
+
+## 5. Kịch Bản Hỏi Giá Chi Tiết
+
+### Trigger: Khách hỏi về giá (gõ: "giá", "bao nhiêu", "bao nhiêu tiền", "giá cả")
+"Dạ bên em có nhiều dòng giá khác nhau anh ơi. Em gửi bảng tham khảo nhanh nhé:
+
+- Tủ mát 1 cánh (194-266L): từ **10,3 – 12,3 triệu**
+- Tủ mát 1 cánh Inverter (278-638L): từ **15,3 – 26 triệu**
+- Tủ mát 2 cánh (765-1100L): từ **27,6 – 38,6 triệu**
+- Tủ mát 3 cánh (1160-1650L): từ **38,6 – 51,2 triệu**
+- Tủ đông đứng cửa kính: từ **16,3 – 44 triệu**
+- Tủ đông nằm: từ **6,2 – 28,4 triệu**
+- Tủ rượu: từ **7,3 – 31,2 triệu**
+- Tủ bánh: từ **11,3 – 42,3 triệu**
+
+*(Giá bán lẻ đề xuất, đã VAT 8% – cập nhật 04/2026)*
+
+Anh cần dòng nào để em gửi báo giá chi tiết và ưu đãi tốt nhất cho mình ạ?"
+
+→ **CTA:** Nút "Để lại thông tin nhận báo giá" → dẫn đến form liên hệ.
+
+---
+
+## 6. Kịch Bản Hỏi Sản Phẩm Có Phù Hợp Không
+
+### Trigger: Khách hỏi dòng nào phù hợp (gõ: "phù hợp", "dùng loại nào", "mua loại nào", "tư vấn", "chọn", "loại nào tốt")
+"Dạ để em tư vấn đúng dòng cho mình thì anh/chị cho em hỏi thêm xíu nhé:
+
+1. **Mình kinh doanh gì?** (quán cafe, tiệm tạp hóa, nhà hàng, kinh doanh kem, thực phẩm...)
+2. **Không gian để tủ rộng cỡ nào?** (để em tư vấn kích thước phù hợp)
+3. **Cần bảo quản gì?** (nước uống, thực phẩm tươi, đông lạnh, rượu, bánh...)
+
+Anh trả lời giúp em mấy ý trên, em sẽ gợi ý đúng model và báo giá cụ thể cho mình trong ngày ạ!"
+
+→ **CTA:** Nút "Điền thông tin để được tư vấn" → dẫn đến form liên hệ.
+
+---
+
+## 7. Kịch Bản Khách Nói "Để Tôi Nghĩ Thêm"
+
+### Trigger: Khách do dự, chưa quyết định (gõ: "nghĩ thêm", "để tính", "chưa biết", "để hỏi thêm", "hẹn sau", "tính sau")
+"Dạ không sao ạ, mua tủ cũng là đầu tư lớn nên anh cân nhắc kỹ là đúng rồi ạ. 😊
+
+Để em không làm phiền anh, anh để lại thông tin (tên + số điện thoại/zalo) bên dưới nhé. Khi nào anh cần hoặc muốn hỏi thêm, em nhắn ngay — không cần gọi mà vẫn được hỗ trợ đầy đủ ạ."
+
+→ **CTA:** Nút "Để lại thông tin, tư vấn sau khi sẵn sàng" → dẫn đến form liên hệ.
