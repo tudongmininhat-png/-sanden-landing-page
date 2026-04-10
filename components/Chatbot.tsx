@@ -12,59 +12,67 @@ const FAQS = [
   {
     q: "Tủ này sản xuất ở đâu em?",
     keywords: ["sản xuất", "xuất xứ", "đâu", "nhật", "thái", "nguồn gốc", "xuất"],
-    a: "Dạ, Sanden Intercool là thương hiệu số 1 của Nhật Bản. Tủ bên em được nhập khẩu nguyên chiếc từ nhà máy Sanden tại Thái Lan nên độ bền và tiêu chuẩn kỹ thuật anh yên tâm hoàn toàn ạ."
+    a: "Dạ, Sanden Intercool là thương hiệu số 1 của Nhật Bản. Tủ bên em được nhập khẩu nguyên chiếc từ nhà máy Sanden tại Thái Lan nên độ bền và tiêu chuẩn kỹ thuật anh yên tâm hoàn toàn ạ.\n\nAnh/chị cần xem giấy tờ nhập khẩu chính ngạch thì cứ nhắn em gửi qua cho mình xem trước nhé!",
+    showCta: true
   },
-
-
   {
     q: "Tủ chạy có tốn điện không?",
     keywords: ["điện", "tốn", "tiết kiệm", "hóa đơn", "kwh", "inverter", "biến tần"],
-    a: "Dạ, đây là thế mạnh của Sanden. Tủ bên em dùng công nghệ Inverter biến tần và dàn lạnh đồng nguyên chất. Tính ra mỗi tháng anh tiết kiệm được tầm 30-35% tiền điện so với các dòng tủ thông thường đó ạ."
+    a: "Dạ, đây là thế mạnh của Sanden. Tủ bên em dùng công nghệ Inverter biến tần và dàn lạnh đồng nguyên chất. Tính ra mỗi tháng anh tiết kiệm được tầm 30-35% tiền điện so với các dòng tủ thông thường đó ạ.\n\nĐể em gửi anh bảng so sánh tiền điện chi tiết của dòng Inverter để mình cân đối tài chính nhé?",
+    showCta: true
   },
   {
     q: "Sao giá cao hơn hiệu khác vậy?",
     keywords: ["giá", "đắt", "cao", "rẻ", "bao nhiêu", "sanaky", "hòa phát", "tiền", "mắc"],
-    a: "Dạ đúng là giá Sanden có nhỉnh hơn, nhưng tiền nào của nấy anh ạ. Anh đầu tư một lần dùng 10-15 năm êm ru, không hỏng vặt. Tính ra chi phí vận hành và tiền điện mỗi tháng rẻ hơn rất nhiều ạ."
+    a: "Dạ đúng là giá Sanden có nhỉnh hơn, nhưng 'tiền nào của nấy' anh ạ. Anh đầu tư một lần dùng 10-15 năm êm ru, không hỏng vặt. Tính ra chi phí vận hành và tiền điện mỗi tháng rẻ hơn rất nhiều so với tủ giá rẻ ạ.\n\nĐặc biệt bên em đang có voucher giảm giá cho khách mới, anh có muốn nhận ngay không ạ?",
+    showCta: true
   },
   {
     q: "Bảo hành bao lâu em?",
     keywords: ["bảo hành", "warranty", "hỏng", "sửa", "chính hãng", "năm", "tháng"],
-    a: "Dạ, bên em bảo hành chính hãng toàn quốc tận nhà mình luôn. Toàn bộ linh kiện bảo hành 1 năm, riêng máy nén (Block) bên em bảo hành tới 3 năm để anh yên tâm kinh doanh ạ."
+    a: "Dạ, bên em bảo hành chính hãng toàn quốc tận nhà mình luôn. Toàn bộ linh kiện bảo hành 1 năm, riêng máy nén (Block) bên em bảo hành tới 3 năm để anh yên tâm kinh doanh ạ.\n\nAnh để lại thông tin, em gửi danh sách trạm bảo hành gần chỗ anh nhất cho mình yên tâm nhé!",
+    showCta: true
   },
   {
     q: "Kính có bị đọng nước không?",
     keywords: ["kính", "đọng", "mờ", "sương", "nhìn", "trong suốt", "nước"],
-    a: "Dạ không anh ơi. Tủ mát Sanden có hệ thống sưởi kính bằng hơi nóng từ máy nén. Kính lúc nào cũng trong suốt, khách đứng ngoài nhìn thấy rõ từng chai nước, rất bắt mắt ạ."
+    a: "Dạ không anh ơi. Tủ mát Sanden có hệ thống sưởi kính bằng hơi nóng từ máy nén. Kính lúc nào cũng trong suốt, khách đứng ngoài nhìn thấy rõ từng chai nước, rất bắt mắt ạ.\n\nAnh cần dòng sấy kính Low-E hay sưởi nhiệt? Để lại thông tin em tư vấn dòng phù hợp nhất với khí hậu chỗ mình nhé!",
+    showCta: true
   },
   {
     q: "Tủ chạy có ồn không?",
     keywords: ["ồn", "ồn ào", "tiếng", "ầm", "yên tĩnh", "êm", "noise"],
-    a: "Dạ tủ chạy cực êm anh nhé. Như máy chủ chạy trong đêm vậy, chỉ nghe tiếng quạt gió rất nhẹ. Anh để gần quầy thu ngân đều không gây khó chịu đâu ạ."
+    a: "Dạ tủ chạy cực êm anh nhé. Như máy chủ chạy trong đêm vậy, chỉ nghe tiếng quạt gió rất nhẹ. Anh để gần quầy thu ngân đều không gây khó chịu đâu ạ.\n\nAnh có muốn qua showroom xem máy thực tế không, em sắp xếp lịch đón mình chu đáo ạ?",
+    showCta: true
   },
   {
     q: "Có giao hàng miễn phí không?",
     keywords: ["giao hàng", "vận chuyển", "ship", "miễn phí", "free", "giao"],
-    a: "Dạ, bên em hỗ trợ giao hàng và lắp đặt tận nơi. Tùy khu vực mà bên em sẽ có chính sách miễn phí hoặc hỗ trợ phí tốt nhất cho anh ạ. Anh cho em xin địa chỉ nhé?"
+    a: "Dạ, bên em hỗ trợ giao hàng và lắp đặt tận nơi. Tùy khu vực mà bên em sẽ có chính sách miễn phí hoặc hỗ trợ phí tốt nhất cho anh ạ.\n\nAnh cho em xin địa chỉ hoặc số điện thoại, em báo kho kiểm tra lịch xe và báo phí vận chuyển chính xác nhất cho mình trong 5 phút ạ!",
+    showCta: true
   },
   {
     q: "Tủ dùng bao lâu cần nạp gas?",
     keywords: ["gas", "nạp", "freon", "môi chất", "rò"],
-    a: "Dạ với dàn lạnh đồng 100% của Sanden thì hệ thống rất kín và bền, mình dùng vài năm cũng không phải lo nạp gas đâu ạ. Chỉ cần vệ sinh định kỳ là dùng bền bỉ suốt đời ạ."
+    a: "Dạ với dàn lạnh đồng 100% của Sanden thì hệ thống rất kín và bền, mình dùng vài năm cũng không phải lo nạp gas đâu ạ. Chỉ cần vệ sinh định kỳ là dùng bền bỉ suốt đời.\n\nBên em có tặng gói bảo trì miễn phí năm đầu, anh để lại thông tin em đăng ký giữ chỗ ưu đãi này cho mình nhé?",
+    showCta: true
   },
   {
     q: "Anh bán cafe dùng loại nào?",
     keywords: ["cafe", "quán", "loại nào", "dòng nào", "model", "mã", "spm", "tư vấn", "nào phù hợp"],
-    a: "Dạ nếu quán cafe thì dòng 1 cánh 400 lít (SPM-0400) là vừa vặn nhất ạ. Tủ sấy kính đẹp, đèn LED sáng, trưng bày nước nhìn rất chuyên nghiệp anh ạ."
+    a: "Dạ nếu quán cafe thì dòng 1 cánh 400 lít (SPM-0400) là vừa vặn nhất ạ. Tủ sấy kính đẹp, đèn LED sáng, trưng bày nước nhìn rất chuyên nghiệp anh ạ.\n\nAnh để lại số điện thoại đi, em gửi hình thực tế các quán cafe đã lắp tủ này cho anh tham khảo phối cảnh ạ!",
+    showCta: true
   },
   {
     q: "Linh kiện hư có dễ thay không?",
     keywords: ["linh kiện", "phụ tùng", "thay", "sửa chữa", "thợ", "kỹ thuật"],
-    a: "Dạ Sanden có kho linh kiện chính hãng tại Việt Nam rất đầy đủ. Việc bảo trì hay thay thế cực kỳ đơn giản, anh không phải lo tìm đồ không có đâu ạ."
+    a: "Dạ Sanden có kho linh kiện chính hãng tại Việt Nam rất đầy đủ. Việc bảo trì hay thay thế cực kỳ đơn giản, anh không phải lo tìm đồ không có đâu ạ.\n\nAnh cho em thông tin để em kết nối kỹ thuật vùng hỗ trợ mình nhanh nhất nếu mình đang cần sửa chữa gấp ạ!",
+    showCta: true
   },
   {
     q: "Sản phẩm nào phù hợp với tôi?",
     keywords: ["phù hợp", "dùng loại nào", "mua loại nào", "tư vấn", "chọn", "loại nào tốt", "gợi ý", "dòng nào"],
-    a: "Dạ để em tư vấn đúng dòng cho mình thì anh/chị cho em hỏi thêm xíu nhé:\n\n1. Mình kinh doanh gì? (cafe, tạp hóa, nhà hàng, kinh doanh kem...)\n2. Không gian để tủ rộng cỡ nào?\n3. Cần bảo quản gì? (nước uống, đông lạnh, rượu, bánh...)\n\nAnh trả lời giúp em mấy ý trên, em sẽ gợi ý đúng model và báo giá cụ thể cho mình trong ngày ạ!",
+    a: "Dạ để em tư vấn đúng dòng cho mình thì anh/chị cho em hỏi thêm xíu nhé:\n\n1. Mình kinh doanh gì? (cafe, tạp hóa, nhà hàng...)\n2. Không gian để tủ rộng cỡ nào?\n3. Cần bảo quản gì? (nước uống, đông lạnh, rượu, bánh...)\n\nAnh trả lời giúp em mấy ý trên, em sẽ gợi ý đúng model và báo giá cụ thể cho mình trong ngày ạ!",
     showCta: true
   },
   {
@@ -75,7 +83,7 @@ const FAQS = [
   }
 ];
 
-const DEFAULT_FALLBACK = "Dạ câu này em chưa có thông tin chính xác để trả lời ngay ạ. Anh/chị để lại thông tin bên dưới, bên em sẽ liên hệ hỗ trợ trực tiếp cho mình nhanh nhất nhé!";
+const DEFAULT_FALLBACK = "Dạ câu này em chưa có đầy đủ thông tin để trả lời chính xác ngay cho mình ạ. Tuy nhiên, chuyên viên Sanden bên em nắm rất rõ mã này, anh/chị để lại thông tin bên dưới, bên em sẽ gọi lại giải đáp kỹ và gửi kèm báo giá ưu đãi nhất cho mình nhé!";
 
 function matchKeyword(input: string): { a: string; showCta: boolean } | null {
   const normalized = input.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -144,11 +152,11 @@ export default function Chatbot() {
     }, 1000);
   };
 
-  const handleQuickReply = (q: string, a: string) => {
+  const handleQuickReply = (q: string, a: string, showCta?: boolean) => {
     setHistory(prev => [...prev, { type: 'user', text: q }]);
     setIsTyping(true);
     setTimeout(() => {
-      setHistory(prev => [...prev, { type: 'bot', text: a }]);
+      setHistory(prev => [...prev, { type: 'bot', text: a, showCta: showCta }]);
       setIsTyping(false);
     }, 1000);
   };
@@ -161,7 +169,6 @@ export default function Chatbot() {
 
   return (
     <>
-      {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`chatbot-fab ${isOpen ? 'active' : ''}`}
@@ -174,10 +181,7 @@ export default function Chatbot() {
         )}
       </button>
 
-      {/* Chat Window */}
       <div className={`chatbot-window glass-panel ${isOpen ? 'open' : ''}`}>
-
-        {/* Header */}
         <div className="chatbot-header">
           <div className="chatbot-header__info">
             <div className="chatbot-avatar">S</div>
@@ -191,7 +195,6 @@ export default function Chatbot() {
           </button>
         </div>
 
-        {/* Message Feed */}
         <div className="chatbot-body" ref={scrollRef}>
           {history.map((msg, idx) => (
             <div key={idx} className={`message ${msg.type}`}>
@@ -213,16 +216,14 @@ export default function Chatbot() {
           )}
         </div>
 
-        {/* Footer */}
         <div className="chatbot-footer">
-          {/* Quick Replies */}
           <div className="quick-replies">
             <p className="quick-replies__label">Câu hỏi thường gặp:</p>
             <div className="quick-replies__grid">
               {FAQS.map((faq, idx) => (
                 <button
                   key={idx}
-                  onClick={() => handleQuickReply(faq.q, faq.a)}
+                  onClick={() => handleQuickReply(faq.q, faq.a, faq.showCta)}
                   className="quick-reply-btn"
                 >
                   {faq.q}
@@ -231,7 +232,6 @@ export default function Chatbot() {
             </div>
           </div>
 
-          {/* Text Input */}
           <div className="chat-input-row">
             <input
               ref={inputRef}
@@ -253,7 +253,6 @@ export default function Chatbot() {
             </button>
           </div>
 
-          {/* CTA */}
           <a href="#contact" onClick={closeChat} className="btn btn--primary chatbot-cta-btn">
             Nhận báo giá ngay 2026
           </a>
@@ -483,7 +482,6 @@ export default function Chatbot() {
           color: var(--primary);
         }
 
-        /* Input Row */
         .chat-input-row {
           display: flex;
           align-items: center;
