@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   description: 'Sanden Intercool - Giải pháp tủ mát chuẩn Nhật Bản. Lạnh sâu, bền bỉ, tiết kiệm điện 35%, bảo hành chính hãng tận nơi.',
 };
 
+import Chatbot from '@/components/Chatbot';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,6 +25,7 @@ export default function RootLayout({
     <html lang="vi" className={`${plusJakartaSans.variable} scroll-smooth`}>
       <body className="antialiased">
         {children}
+        <Chatbot />
       </body>
     </html>
   );
